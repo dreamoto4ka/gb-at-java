@@ -15,19 +15,6 @@ import java.util.stream.Stream;
 public class JumpTest {
     ChallengeService challengeService = new ChallengeService();
 
-    // @Test
-/*    void testJump(){
-        ArrayList<Cat> cats = getCats();
-        ArrayList<Robot> robots = getRobots();
-        ArrayList<Human> humans = getHumans();
-        ArrayList<Wall> wall = getWalls();
-        ArrayList<Boolean> expectedResult = getBooleans();
-        ArrayList<Runner> runners = getRunners(cats, robots, humans);
-        ArrayList<Obstacle> obstacles = new ArrayList<Obstacle>();
-        obstacles.addAll(wall);
-        Assertions.assertEquals(expectedResult, challengeService.jumpOrRun(runners, obstacles));
-    }*/
-
     @ParameterizedTest
     @MethodSource("data")
     public void testJump(Wall wall, Runner runner, boolean isSuccessful) {
