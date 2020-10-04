@@ -25,6 +25,7 @@ public class RunTest {
         ArrayList<Runner> expectedResult = new ArrayList<>();
         expectedResult.add(robots.get(2));
         expectedResult.add(humans.get(2));
+        expectedResult.add(cats.get(2));
 
         ArrayList<Runner> runners = getRunners(cats, robots, humans);
 
